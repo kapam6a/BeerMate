@@ -15,29 +15,19 @@ class AuthPresenter {
 
 extension AuthPresenter: AuthViewOutput {
     func didEnter() {
-        
+        print("didEnter")
     }
     
     func didSelectFacebook() {
-        
+        print("didSelectFacebook")
     }
     
     func didSelectVkontakte() {
-        
+        print("didSelectVkontakte")
     }
 }
 
 extension AuthPresenter: AuthInteractorOutput {
     
 }
-
-extension Sequence {
-    func last(where predicate: (Iterator.Element) -> Bool) -> Iterator.Element? {
-        for element in reversed() where predicate(element) {
-            return element
-        }
-        return nil
-    }
-}
-
 
